@@ -1,7 +1,7 @@
 # Investigation Report — Windows Security Incident
 
 **Date:** 2024-03-15
-**Analyst:** [Your Name]
+**Analyst:** Menard Francisco
 **Severity:** Critical
 **Status:** Resolved
 
